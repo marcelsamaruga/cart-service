@@ -1,0 +1,22 @@
+application:
+ products:
+  uri: http://localhost:8001/products/
+
+spring:
+ jpa:
+  hibernate:
+   ddl-auto: update
+ data:
+    mongodb:
+      host: localhost
+      port: 27017
+      username: root
+      password: root
+      database: wipro
+      authentication-database: admin
+      repositories:
+        enabled: true
+
+server:
+  port: 8899
+

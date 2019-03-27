@@ -1,0 +1,9 @@
+applications:
+- name: cart-service-ma363602
+  path: ./target/cart-service-0.0.1-SNAPSHOT.jar
+  routes:
+    - route: cart-service-ma363602.cfapps.io
+  memory: 798MB
+  instances: 1
+  services:
+    - cart-service-db
